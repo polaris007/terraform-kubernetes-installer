@@ -59,6 +59,9 @@ spec:
       readOnly: false
   volumes:
   - hostPath:
+      path: /etc/kubernetes/manifests
+    name: manifests-kubernetes
+  - hostPath:
       path: /etc/kubernetes/auth
     name: auth-kubernetes
   - hostPath:
