@@ -7,3 +7,4 @@ resources:
     - aesgcm:
         keys:
         - name: key1
+          secret: 7UeIkfo16qCDf+EPovyiARe1C419xwP/q8CtSmf6WDk=
