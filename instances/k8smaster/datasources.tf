@@ -34,6 +34,10 @@ data "template_file" "setup-preflight" {
 
 data "template_file" "etcd-encryption" {
   template = "${file("${path.module}/manifests/encryption-provider-config.yaml")}"
+
+  vars = {
+    encryption_secret = "${var.encryption_secret}"
+  }
 }
 
 data "template_file" "kube-apiserver" {
